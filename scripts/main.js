@@ -173,8 +173,13 @@
         // =================
 
         const trafficAnnotations = createAnnotations('Pageviews', [
-            { x: "2025/02/21", text: "Example annotation 1" },
-            { x: "2025/03/21", text: "Example annotation 2" },
+            { x: "2025/01/09", text: "Season 1: Welcome to Noxus is released", tickHeight: 40 },
+            { x: "2025/04/30", text: "Season 2: Spirit Blossom Beyond is released" },
+            { x: "2025/06/26", text: "Arena game mode returns" },
+            { x: "2025/07/25", text: "Season 3: Trials of Twilight is released", tickHeight: 30 },
+            { x: "2025/10/14", text: "2025 World Championship begins" },
+            { x: "2025/10/22", text: "ARAM: Mayhem game mode is released", tickHeight: 50 },
+            { x: "2025/11/09", text: "2025 World Championship Final takes place", tickHeight: 50 },
         ]);
         const trafficGraphConfig = (containerSelector, yAxisRange, annotations, lineColor) => {
             return {
@@ -231,7 +236,7 @@
                     ...config.axes,
                     y: {
                         ...config.axes.y,
-                        valueRange: [0, 4600],
+                        valueRange: [0, 1200],
                         valueFormatter: createValueFormatter(config.locale)
                     }
                 }
