@@ -1,4 +1,28 @@
 /* ------------
+       FONTS
+   ------------ */
+
+@font-face {
+    font-family: Beaufort;
+    src:
+    url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Heavy.woff2) format("woff2"),
+    url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Heavy.woff) format("woff"),
+    url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Heavy.ttf) format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Beaufort;
+    src:
+    url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Bold.woff2) format("woff2"),
+    url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Bold.woff) format("woff"),
+    url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ------------
       BASICS
    ------------ */
 
@@ -21,6 +45,7 @@ html {
 
 body {
     --font-stack: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
+    --serif-font-stack: 'Beaufort', 'Garamond', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
 
     --base-hue: 245deg;
 
@@ -70,6 +95,12 @@ body {
     transition: --base-hue 1.5s ease;
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--serif-font-stack);
+}
+
 h1 {
     color: var(--text-01);
     font-weight: 800;
@@ -81,7 +112,7 @@ h1 {
 h2 {
     color: var(--text-01);
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.2;
     margin: 0 0 1.25rem;
 }
@@ -179,7 +210,7 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
 
-    font-size: calc(var(--header-size) * 3.5);
+    font-size: calc(var(--header-size) * 3.6);
     font-weight: 850;
     letter-spacing: -0.02em;
     margin: -0.05em 0;
@@ -278,6 +309,7 @@ section .link {
 
 .stat-value {
     color: var(--text-theme);
+    font-family: var(--serif-font-stack);
     font-size: 2.5em;
     font-weight: 800;
     line-height: 1;
