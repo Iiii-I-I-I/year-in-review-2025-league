@@ -603,6 +603,14 @@ div[style*="bottom: 0px"] .dygraph-axis-label-y {
     opacity: 0.8;
 }
 
+.most-visited::before {
+    background-image:
+        var(--upper-gradient),
+        url('../images/bg/Yunara.jpg');
+    background-position: 0%;
+    background-size: cover;
+}
+
 .champions::before {
     background-image:
         var(--upper-gradient),
